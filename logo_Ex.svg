@@ -1,0 +1,7 @@
+<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+
+    <g>
+        <rect x="75" y="50" width="145" height="145" fill="red"/>
+        <text x="97" y="140" font-size="50" font-weight="bold" fill="white">EXP</text>
+    </g>
+</svg>

@@ -3,6 +3,7 @@ const fs = require('fs');
 const shapes = require('./lib/shapes');
 
 let logo = '';
+let shapeColor = '';
 
 function writeToFile() {
 
@@ -32,21 +33,21 @@ function writeToFile() {
     ]).then((data) => {
     
         if(data.shape === 'circle') {
-            logo = shapes.callCircle(data.letters, data.colorT, data.colorS, data.shape);
+            shapeColor = shapes.callCircle( data.colorS, data.shape);
         }
         if(data.shape === 'triangle') {
-            logo = shapes.callTriangle(data.letters, data.colorT, data.colorS, data.shape);
+            shapeColor = shapes.callTriangle( data.colorS, data.shape);
         }
         if(data.shape === 'square') {
-            logo = shapes.callSquare(data.letters, data.colorT, data.colorS, data.shape);
+            shapeColor = shapes.callSquare( data.colorS, data.shape);
         }
 
-    fs.writeFile('logo.svg', logo , (err) => {
-    err ? console.error(err) : console.log('Generated logo.svg')
-    });
+        logo = shapes.createLogo(data.letters, data.colorT, shapeColor);
 
-    }
-    );
+        fs.writeFile('logo.svg', logo , (err) => {
+        err ? console.error(err) : console.log('Generated logo.svg')
+        });
+    });
   
 }
 

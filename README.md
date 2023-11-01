@@ -13,4 +13,6 @@ You would need to install jest
 
  To run the application in your terminal you have to use node index.js. Then you will need to answer the prompts given to you.
 
-  link to my repository: (https://github.com/FoundEven/WeekTenChallenge_LogoCreator)
+Link to walkthrough video: (https://drive.google.com/file/d/1SzJOYIc9XGO2K_Cz_2nTlj6yOz-yCpqP/view?usp=sharing)
+
+link to my repository: (https://github.com/FoundEven/WeekTenChallenge_LogoCreator)
